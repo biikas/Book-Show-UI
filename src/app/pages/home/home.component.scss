@@ -1,0 +1,2563 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    background: #fcfcfc;
+    overflow: hidden;
+  }
+  .rectangle-copy {
+    position: relative;
+    width: 1440px;
+    height: 74px;
+    margin: 0 0 0 0;
+    background: #775dff;
+    z-index: 107;
+    overflow: visible auto;
+  }
+  .flex-row-c {
+    position: relative;
+    width: 1362px;
+    height: 42px;
+    margin: 16px 0 0 38px;
+    z-index: 132;
+  }
+  .textfield {
+    position: absolute;
+    width: 33.7%;
+    height: 100%;
+    top: 0;
+    left: 55.29%;
+    background: #ffffff;
+    z-index: 115;
+    border-radius: 29px;
+  }
+  .top-search-bar-input {
+    position: absolute;
+    width: 459px;
+    height: 42px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    z-index: 120;
+    outline: none;
+  }
+  .group {
+    position: relative;
+    width: 87px;
+    height: 24px;
+    margin: 9px 0 0 12px;
+    opacity: 0.4000000059604645;
+    z-index: 116;
+    overflow: hidden;
+  }
+  .icon-search {
+    position: absolute;
+    width: 27.59%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 117;
+  }
+  .ic-search-px {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/3e65d0f9-68e4-49d3-bc6c-0ec8dc17fe1b.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 118;
+  }
+  .search {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: 36.78%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 119;
+  }
+  .regroup-i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 8.08%;
+    height: 100%;
+    top: 0;
+    left: 91.92%;
+    z-index: 111;
+  }
+  .group-1 {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    // background: url(./assets/images/db10414d-00dd-41d8-ba8f-28e3ae0f2a78.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 109;
+  }
+  .profile-picture {
+    flex-shrink: 0;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    // background: url(./assets/images/ac126e07-7d53-4051-9a33-0e419a962d39.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 111;
+  }
+  .ag {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: 14.29%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 112;
+  }
+  .logo {
+    position: absolute;
+    width: 8.88%;
+    height: 73.81%;
+    top: 14.29%;
+    left: 0;
+    // background: url(./assets/images/c7622aa2-5180-4391-ad74-97a4a90c3709.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 121;
+  }
+  .group-2 {
+    position: absolute;
+    width: 3.74%;
+    height: 57.14%;
+    top: 21.43%;
+    left: 14.54%;
+    z-index: 132;
+    overflow: hidden;
+  }
+  .home-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 133;
+  }
+  .group-4 {
+    position: absolute;
+    width: 3.67%;
+    height: 57.14%;
+    top: 21.43%;
+    left: 24.82%;
+    opacity: 0.4000000059604645;
+    z-index: 129;
+    overflow: hidden;
+  }
+  .categories {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 172%;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: -36%;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 130;
+  }
+  .group-5 {
+    position: absolute;
+    width: 3.67%;
+    height: 57.14%;
+    top: 21.43%;
+    left: 35.1%;
+    opacity: 0.4000000059604645;
+    z-index: 126;
+    overflow: hidden;
+  }
+  .my-tickets {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 168%;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: -34%;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 127;
+  }
+  .group-6 {
+    position: absolute;
+    width: 3.67%;
+    height: 57.14%;
+    top: 21.43%;
+    left: 45.37%;
+    opacity: 0.4000000059604645;
+    z-index: 123;
+    overflow: hidden;
+  }
+  .bookmarked {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 210%;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: -54%;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 124;
+  }
+  .rectangle {
+    position: relative;
+    width: 140px;
+    height: 4px;
+    margin: 12px 0 0 191px;
+    background: #ffffff;
+    z-index: 134;
+  }
+  .categories-7 {
+    position: relative;
+    width: 1516px;
+    height: 29px;
+    margin: 27px 0 0 40px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .filters {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14.5px);
+    left: 0;
+    color: #4a494a;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .tags {
+    position: absolute;
+    width: 94.39%;
+    height: 96.55%;
+    top: 3.45%;
+    left: 5.61%;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .soccer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 0;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .sports {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 5.87%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .music {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 11.53%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 6;
+  }
+  .rock-roll {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 16.77%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .technology {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 25.72%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+  }
+  .barcelona {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 34.94%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .real-madrid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 43.19%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .comic-book-movies {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 52.69%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 11;
+  }
+  .marvel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 67.58%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 12;
+  }
+  .star-wars {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 73.45%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .fashion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 81.34%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+  }
+  .apple {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 87.98%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .samsung {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: calc(50% - 14px);
+    left: 93.22%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 16;
+  }
+  .flex-row-d {
+    position: absolute;
+    width: 1269px;
+    height: 521px;
+    top: 147px;
+    left: 163px;
+    z-index: 104;
+  }
+  .featured-events {
+    position: absolute;
+    width: 896px;
+    height: 448px;
+    top: 0;
+    left: 0;
+    font-size: 0px;
+    z-index: 17;
+    overflow: hidden;
+  }
+  .featured-events-8 {
+    display: block;
+    position: relative;
+    height: 32px;
+    margin: 0 0 0 0;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .featured-event {
+    position: absolute;
+    width: 100%;
+    height: 89.29%;
+    top: 10.71%;
+    left: 0;
+    z-index: 19;
+  }
+  .featured-event-9 {
+    position: absolute;
+    width: 897px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    // -webkit-mask-image: url(./assets/images/4cb3915c-a7f1-474d-b228-a7ec63e20fab.png);
+    // -webkit-mask-size: cover;
+  }
+  .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #f7f7f7;
+    z-index: 21;
+    border-radius: 8px;
+  }
+  .rectangle-a {
+    position: absolute;
+    width: 99.89%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/eb2704f9-07cc-483a-88fc-e9f110be71b8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 23;
+  }
+  .icons-white-heart {
+    position: absolute;
+    width: 5.35%;
+    height: 12%;
+    top: 6%;
+    left: 91.86%;
+    z-index: 24;
+  }
+  .ic-favorite-px {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/0fe0c3d8-4c74-49b0-8e97-0c84810ffa07.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 25;
+  }
+  .title {
+    position: absolute;
+    width: 46.71%;
+    height: 24%;
+    top: 71%;
+    left: 3.57%;
+    font-size: 0px;
+    z-index: 28;
+    overflow: hidden;
+  }
+  .apple-special-event {
+    display: block;
+    position: relative;
+    height: 68px;
+    margin: 0 0 0 0;
+    color: #ffffff;
+    font-family: BebasNeue, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 68px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 29;
+  }
+  .october-san-fran {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 0 0 0 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 30;
+  }
+  .three-dots {
+    position: absolute;
+    width: 6.02%;
+    height: 2.5%;
+    top: 93.5%;
+    left: 46.93%;
+    z-index: 26;
+  }
+  .three-dots-b {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/4893d2f7-f1a1-4657-847f-e77e654235ea.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 27;
+  }
+  .frame {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 288px;
+    left: 699px;
+    z-index: 31;
+    overflow: hidden;
+  }
+  .my-tickets-c {
+    position: absolute;
+    width: 432px;
+    height: 448px;
+    top: 10px;
+    left: 805px;
+    z-index: 32;
+    overflow: hidden;
+  }
+  .tickets {
+    position: relative;
+    width: 432px;
+    height: 400px;
+    margin: 48px 0 0 0;
+    z-index: 34;
+    overflow: visible auto;
+  }
+  .ticket-small {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 0 0 0 0;
+    z-index: 35;
+    overflow: visible auto;
+  }
+  .button {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 0 368px;
+    z-index: 48;
+    overflow: visible auto;
+  }
+  .icons-white-qr {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin: 6px 0 0 6px;
+    z-index: 50;
+  }
+  .qr {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/9f9a771f-10e6-4190-99cb-8e15430fbd3e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 51;
+  }
+  .button-square {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/04c6dfb5-f69a-4a77-bd38-a994a8f78fa7.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 49;
+    border-radius: 4px;
+  }
+  .ticket {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 36;
+    overflow: hidden;
+  }
+  .rectangle-d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/a34226f9-2d48-47c2-bd6b-cf0e60399701.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 37;
+  }
+  .avengers-infinity-war {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 38;
+  }
+  .picture {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/0053113c-1f16-4548-bc42-3ae65493a1ed.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 47;
+  }
+  .time-date {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 39;
+    overflow: hidden;
+  }
+  .icon-purple-clock {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 40;
+  }
+  .ic-access-time-px {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/bf678ee6-589b-433e-bd7c-ae6de11c58f2.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 41;
+  }
+  .september-10am {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 42;
+  }
+  .location {
+    position: absolute;
+    width: 37.73%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 43;
+    overflow: hidden;
+  }
+  .icon-purple-pin {
+    position: absolute;
+    width: 11.04%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 45;
+  }
+  .ic-location-on-px {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/6e9941a7-d49b-477c-8e67-ab5e7f2f11f8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 46;
+  }
+  .oakland-imax-theater {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.95%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 44;
+  }
+  .ticket-small-e {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 52;
+    overflow: visible auto;
+  }
+  .button-f {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 0 368px;
+    z-index: 65;
+    overflow: visible auto;
+  }
+  .icons-white-qr-10 {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin: 6px 0 0 6px;
+    z-index: 67;
+  }
+  .qr-11 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/90eb2ad7-42c9-4209-a111-59de58adef9a.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 68;
+  }
+  .button-square-12 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/20580d99-bc5d-425d-b8ff-45d84198daa5.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 66;
+    border-radius: 4px;
+  }
+  .ticket-13 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 53;
+    overflow: hidden;
+  }
+  .rectangle-14 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/a0157822-4e60-43a1-ae14-f7a89fa90548.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 54;
+  }
+  .star-wars-last-jedi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 55;
+  }
+  .picture-15 {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/a8a91381-b511-42b4-8f15-0d44b01f0ae8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 64;
+  }
+  .time-date-16 {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 56;
+    overflow: hidden;
+  }
+  .icon-purple-clock-17 {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 57;
+  }
+  .ic-access-time-px-18 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/0dbc8cdc-ad2e-488f-bb70-96b9216dc497.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 58;
+  }
+  .september-10am-19 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 59;
+  }
+  .location-1a {
+    position: absolute;
+    width: 37.73%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 60;
+    overflow: hidden;
+  }
+  .icon-purple-pin-1b {
+    position: absolute;
+    width: 11.04%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 62;
+  }
+  .ic-location-on-px-1c {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/80072021-723c-4b8d-9c30-a8e49293f6e7.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 63;
+  }
+  .oakland-imax-theater-1d {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.95%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 61;
+  }
+  .ticket-small-1e {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 69;
+    overflow: visible auto;
+  }
+  .button-1f {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 0 368px;
+    z-index: 82;
+    overflow: visible auto;
+  }
+  .icons-white-qr-20 {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin: 6px 0 0 6px;
+    z-index: 84;
+  }
+  .qr-21 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/3ea9a4ce-8e64-4b20-9f02-c08f6d3470b3.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 85;
+  }
+  .button-square-22 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/7a53cdc9-4f7f-472d-a5bc-d18e277ac1d7.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 83;
+    border-radius: 4px;
+  }
+  .ticket-23 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    overflow: hidden;
+  }
+  .rectangle-24 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/98a3dc67-4d21-4faa-bf78-1c2851809b8a.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 71;
+  }
+  .avengers-infinity-w {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 72;
+  }
+  .picture-25 {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/b289dd5c-a440-40cc-8f18-c60de6a0615c.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 81;
+  }
+  .time-date-26 {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 73;
+    overflow: hidden;
+  }
+  .icon-purple-clock-27 {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 74;
+  }
+  .ic-access-time-px-28 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/98ee24d5-4795-4c5e-9a73-84c5e9346ac7.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 75;
+  }
+  .september-date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 76;
+  }
+  .location-29 {
+    position: absolute;
+    width: 37.73%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 77;
+    overflow: hidden;
+  }
+  .icon-purple-pin-2a {
+    position: absolute;
+    width: 11.04%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 79;
+  }
+  .ic-location-on-px-2b {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/788deff9-4456-488a-9480-ac0307ee4886.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 80;
+  }
+  .oakland-imax-theater-2c {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.95%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 78;
+  }
+  .ticket-small-2d {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 86;
+    overflow: visible auto;
+  }
+  .button-2e {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 0 368px;
+    z-index: 99;
+    overflow: visible auto;
+  }
+  .icons-white-qr-2f {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin: 6px 0 0 6px;
+    z-index: 101;
+  }
+  .qr-30 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/f927adbd-fc1c-4c36-b24a-79e58d7acf9b.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 102;
+  }
+  .button-square-31 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/25066d48-7ee7-4b7e-ba77-ee47ccf6a829.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 100;
+    border-radius: 4px;
+  }
+  .ticket-32 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 87;
+    overflow: hidden;
+  }
+  .rectangle-33 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/963d55da-b044-456d-b2a1-bb9bc31483cf.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 88;
+  }
+  .avengers-infinity-w-34 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 89;
+  }
+  .picture-35 {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/6807d353-26cf-4256-9e58-f73feadd3869.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 98;
+  }
+  .time-date-36 {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 90;
+    overflow: hidden;
+  }
+  .icon-purple-clock-37 {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 91;
+  }
+  .ic-access-time-px-38 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/fb051fde-1a3e-4613-88cd-873cc701432e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 92;
+  }
+  .september-date-39 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 93;
+  }
+  .location-3a {
+    position: absolute;
+    width: 37.73%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 94;
+    overflow: hidden;
+  }
+  .icon-purple-pin-3b {
+    position: absolute;
+    width: 11.04%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 96;
+  }
+  .ic-location-on-px-3c {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/073d600b-727e-43ef-84fc-9513d631015e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 97;
+  }
+  .oakland-imax-theater-3d {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.95%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 95;
+  }
+  .my-tickets-3e {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 224px);
+    left: 0;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 33;
+  }
+  .view-all {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 216px);
+    left: 84.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 103;
+  }
+  .scroller {
+    position: absolute;
+    width: 8px;
+    height: 511px;
+    top: 10px;
+    left: 1261px;
+    background: #d7d7d7;
+    opacity: 0.4000000059604645;
+    z-index: 104;
+    border-radius: 8px;
+  }
+  .flex-row-bbe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 1360px;
+    height: 344px;
+    top: 637px;
+    left: 40px;
+    z-index: 187;
+  }
+  .fovoeite-categories {
+    flex-shrink: 0;
+    position: relative;
+    width: 432px;
+    height: 344px;
+    z-index: 135;
+    overflow: hidden;
+  }
+  .category {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 48px 0 0 0;
+    z-index: 137;
+  }
+  .category-3f {
+    position: absolute;
+    width: 432px;
+    height: 88px;
+    top: 0;
+    left: 0;
+    z-index: 138;
+  }
+  .photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/11584f94-e60c-4dfd-ae89-884bdf86de29.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 139;
+  }
+  .rectangle-40 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/f102d131-9941-497f-925d-e8585a4350d0.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 140;
+  }
+  .icons-white-movies {
+    position: absolute;
+    width: 11.11%;
+    height: 54.55%;
+    top: 22.73%;
+    left: 5.56%;
+    // background: url(./assets/images/5eabfe5b-e520-4010-b76e-7779107e88ba.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 141;
+  }
+  .icons-white-heart-41 {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 142;
+  }
+  .ic-favorite-px-42 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/6821aeab-afbf-4fc4-bf94-25b8724eddb9.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 143;
+  }
+  .text-icon {
+    position: absolute;
+    width: 20.37%;
+    height: 37.5%;
+    top: 31.75%;
+    left: 20.37%;
+    z-index: 144;
+    overflow: hidden;
+  }
+  .movies {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 16.44px);
+    left: 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 145;
+  }
+  .category-div {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 146;
+  }
+  .category-div-43 {
+    position: absolute;
+    width: 432px;
+    height: 88px;
+    top: 0;
+    left: 0;
+    z-index: 147;
+  }
+  .photo-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/2e29f9cc-cd03-4776-95f9-c248d9715a34.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 148;
+  }
+  .rectangle-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/f0287ebe-26ad-4e99-bfee-1c6cc9802155.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 149;
+  }
+  .movies-icons-div {
+    position: absolute;
+    width: 11.11%;
+    height: 54.55%;
+    top: 22.73%;
+    left: 5.56%;
+    z-index: 150;
+  }
+  .ic-directions-run-div {
+    position: relative;
+    width: 48px;
+    height: 46.878px;
+    margin: 0.06px 0 0 0;
+    // background: url(./assets/images/55f2941f-9800-41f7-9724-92ee129734a3.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 151;
+  }
+  .heart-icons-div {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 152;
+  }
+  .ic-favorite-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/515120d4-5484-467b-b2c3-f062016e7406.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 153;
+  }
+  .text-icon-div {
+    position: absolute;
+    width: 20.37%;
+    height: 37.5%;
+    top: 31.75%;
+    left: 20.37%;
+    z-index: 154;
+    overflow: hidden;
+  }
+  .movies-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 16.44px);
+    left: 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 155;
+  }
+  .category-div-44 {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 156;
+  }
+  .category-div-45 {
+    position: absolute;
+    width: 432px;
+    height: 88px;
+    top: 0;
+    left: 0;
+    z-index: 157;
+  }
+  .photo-div-46 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/1654649b-63e9-4c6d-bcf3-65f91756ba81.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 158;
+  }
+  .rectangle-div-47 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/d37dfc87-4cd5-4cff-a39f-b17ff583ca33.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 159;
+  }
+  .technology-icons-div {
+    position: absolute;
+    width: 11.11%;
+    height: 54.55%;
+    top: 22.73%;
+    left: 5.56%;
+    background: #775dff;
+    z-index: 160;
+  }
+  .ic-computer-div {
+    position: relative;
+    width: 48px;
+    height: 47.854px;
+    margin: 0 0 0 0;
+    // background: url(./assets/images/2032d765-1970-4ce5-b7f4-f34eb5d68755.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 161;
+  }
+  .heart-icons-div-48 {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 162;
+  }
+  .ic-favorite-div-49 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/a2a53b33-648a-42e7-ad8d-3e19e79c0a8e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 163;
+  }
+  .text-icon-div-4a {
+    position: absolute;
+    width: 20.37%;
+    height: 37.5%;
+    top: 31.75%;
+    left: 20.37%;
+    z-index: 164;
+    overflow: hidden;
+  }
+  .technology-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 16.44px);
+    left: 0;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 165;
+  }
+  .favorite-categories-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 172px);
+    left: 0;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 136;
+  }
+  .view-all-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 164px);
+    left: 84.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 166;
+  }
+  .favorite-creators-div {
+    flex-shrink: 0;
+    position: relative;
+    width: 432px;
+    height: 344px;
+    z-index: 167;
+    overflow: hidden;
+  }
+  .favorite-creators-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 172px);
+    left: 0;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 169;
+  }
+  .flex-column-c-div {
+    position: absolute;
+    width: 100%;
+    height: 336px;
+    top: 8px;
+    left: 0;
+    font-size: 0px;
+    z-index: 180;
+  }
+  .view-all-copy-span {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 0 0 363px;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 168;
+  }
+  .creator-button {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 170;
+  }
+  .rectangle-div-4b {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/3e3c14b2-56cf-4178-bba6-7cd0e5b7d433.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 171;
+  }
+  .bitmap-div {
+    position: absolute;
+    width: 28.94%;
+    height: 56.82%;
+    top: 21.59%;
+    left: 35.65%;
+    // background: url(./assets/images/5c8bf1a0-8d67-46ec-966f-803e2ef6df5e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 174;
+  }
+  .heart-icons-div-4c {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 172;
+  }
+  .ic-favorite-div-4d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/050672a5-8e44-4f3a-85b1-923585553ed8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 173;
+  }
+  .creator-div {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 175;
+  }
+  .rectangle-div-4e {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/3dc8f205-e9ab-437d-a93b-855a9041230c.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 176;
+  }
+  .bitmap-div-4f {
+    position: absolute;
+    width: 12.27%;
+    height: 60.23%;
+    top: 20.45%;
+    left: 43.98%;
+    // background: url(./assets/images/109f862d-6770-4e57-8e98-35a84c46a496.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 179;
+  }
+  .heart-icons-div-50 {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 177;
+  }
+  .ic-favorite-div-51 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/4f3d2a12-968a-45ca-b2c8-20c56b423e20.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 178;
+  }
+  .creator-button-52 {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 180;
+  }
+  .rectangle-div-53 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/38efbab8-0d3a-4741-a5d5-51d352818012.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 181;
+  }
+  .logo-div {
+    position: absolute;
+    width: 166px;
+    height: 57px;
+    top: 16px;
+    left: 133px;
+    z-index: 184;
+  }
+  .bitmap-div-54 {
+    position: absolute;
+    width: 33.73%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/b10dd0fd-07b0-4052-b1f1-0b1cf24c58b8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 186;
+  }
+  .bitmap-div-55 {
+    position: absolute;
+    width: 56.63%;
+    height: 54.39%;
+    top: 22.81%;
+    left: 43.37%;
+    // background: url(./assets/images/08d508b1-3389-4947-a56f-60e2ddfbc9d8.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 185;
+  }
+  .heart-icons-div-56 {
+    position: absolute;
+    width: 8.33%;
+    height: 40.91%;
+    top: 29.55%;
+    left: 87.96%;
+    z-index: 182;
+  }
+  .ic-favorite-div-57 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/60499adb-eeb7-480b-822b-aa451bbac9af.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 183;
+  }
+  .bookmarked-events-div {
+    flex-shrink: 0;
+    position: relative;
+    width: 432px;
+    height: 344px;
+    z-index: 187;
+    overflow: hidden;
+  }
+  .bookmarked-events-span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: calc(50% - 172px);
+    left: 0;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 189;
+  }
+  .flex-column-a-div {
+    position: absolute;
+    width: 100%;
+    height: 336px;
+    top: 8px;
+    left: 0;
+    font-size: 0px;
+    z-index: 190;
+  }
+  .view-all-copy {
+    display: block;
+    position: relative;
+    height: 24px;
+    margin: 0 0 0 363px;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 188;
+  }
+  .my-tickets-58 {
+    position: relative;
+    width: 432px;
+    height: 296px;
+    margin: 16px 0 0 0;
+    z-index: 190;
+  }
+  .bookmarked-59 {
+    position: absolute;
+    width: 432px;
+    height: 296px;
+    top: 0;
+    left: 0;
+    z-index: 191;
+  }
+  .bookmarked-event-small {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 0 0 0 0;
+    z-index: 192;
+  }
+  .event {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 193;
+    overflow: hidden;
+  }
+  .rectangle-5a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/f61c46aa-4800-45ba-928a-f357b2110669.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 194;
+  }
+  .apple-special-event-5b {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 195;
+  }
+  .picture-5c {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/2acbd9d4-eb08-4beb-b111-96710e059c63.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 204;
+  }
+  .time-date-5d {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 196;
+    overflow: hidden;
+  }
+  .icon-purple-clock-5e {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 197;
+  }
+  .ic-access-time-px-5f {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/c67999a3-64dd-49dc-83b7-0e693da11fde.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 198;
+  }
+  .september-30-10am {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 199;
+  }
+  .location-60 {
+    position: absolute;
+    width: 32.64%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 200;
+    overflow: hidden;
+  }
+  .icon-purple-pin-61 {
+    position: absolute;
+    width: 12.77%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 202;
+  }
+  .ic-location-on-px-62 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/646e547e-b1d1-4b11-842c-a30889b4c61e.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 203;
+  }
+  .steve-jobs-theater {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 18.44%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 201;
+  }
+  .bookmarked-event-small-63 {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 205;
+  }
+  .event-64 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 206;
+    overflow: hidden;
+  }
+  .rectangle-65 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/5c2128b8-50c6-4e6b-9e6f-07fb3b8f8fad.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 207;
+  }
+  .oneplus-event {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 208;
+  }
+  .picture-66 {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/7dc30997-2acd-4315-a70c-13fcce42e6a9.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 217;
+  }
+  .time-date-67 {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 209;
+    overflow: hidden;
+  }
+  .icon-purple-clock-68 {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 210;
+  }
+  .ic-access-time-px-69 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/407dbabc-05c9-433b-8dd9-2254d1b52a5b.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 211;
+  }
+  .september-30-10am-6a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 212;
+  }
+  .location-6b {
+    position: absolute;
+    width: 32.64%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 213;
+    overflow: hidden;
+  }
+  .icon-purple-pin-6c {
+    position: absolute;
+    width: 12.77%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 215;
+  }
+  .ic-location-on-px-6d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/e5542cb9-fbd9-4d7e-a943-07f64def7667.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 216;
+  }
+  .oneplus-theater {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 18.44%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 214;
+  }
+  .bookmarked-event-small-6e {
+    position: relative;
+    width: 432px;
+    height: 88px;
+    margin: 16px 0 0 0;
+    z-index: 218;
+  }
+  .event-6f {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 219;
+    overflow: hidden;
+  }
+  .rectangle-70 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/b7103fa0-b890-4bd4-b334-4e8c22723646.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 220;
+  }
+  .comic-con-2018 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 24px;
+    top: calc(50% - 36px);
+    left: 22.22%;
+    color: #000000;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 221;
+  }
+  .picture-71 {
+    position: absolute;
+    width: 16.67%;
+    height: 81.82%;
+    top: 9.09%;
+    left: 1.85%;
+    // background: url(./assets/images/7ebbbc86-f892-4a44-b7e6-506462d2ee37.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 230;
+  }
+  .time-date-72 {
+    position: absolute;
+    width: 40.05%;
+    height: 20.45%;
+    top: 43.18%;
+    left: 22.22%;
+    z-index: 222;
+    overflow: hidden;
+  }
+  .icon-purple-clock-73 {
+    position: absolute;
+    width: 10.4%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 223;
+  }
+  .ic-access-time-px-74 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/beff3283-5945-42e1-8cd3-a0e785eba62b.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 224;
+  }
+  .september-30-10am-75 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 15.03%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 225;
+  }
+  .location-76 {
+    position: absolute;
+    width: 32.64%;
+    height: 20.45%;
+    top: 70.45%;
+    left: 22.22%;
+    z-index: 226;
+    overflow: hidden;
+  }
+  .icon-purple-pin-77 {
+    position: absolute;
+    width: 12.77%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 228;
+  }
+  .ic-location-on-px-78 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: url(./assets/images/59a37ca8-5158-4af8-a41e-265111013619.png)
+    //   no-repeat center;
+    background-size: 100% 100%;
+    z-index: 229;
+  }
+  .oakland-theater {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 18.44%;
+    color: #775dff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 227;
+  }
+  

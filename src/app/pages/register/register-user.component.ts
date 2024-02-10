@@ -10,6 +10,7 @@ import { NbFormFieldModule, NbButtonModule, NbInputModule } from "@nebular/theme
     selector: 'register-user',
     templateUrl: './register-user.component.html',
     standalone: true,
+    styleUrls:['./register-user.component.scss'],
     imports: [FormsModule, CommonModule, HttpClientModule, ReactiveFormsModule, NbFormFieldModule, RouterModule,
         NbButtonModule,
         NbInputModule,]

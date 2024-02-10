@@ -13,4 +13,8 @@ export const AppRoutes: Routes = [
         path: 'register',
         loadComponent: () => import('../pages/register/register-user.component').then(module => module.RegisterUserComponent),
     },
+    {
+        path: 'home',
+        loadComponent: () => import('../pages/home/home.component').then(module => module.HomeCompnent),
+    },
 ]
