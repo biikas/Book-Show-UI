@@ -10,6 +10,8 @@ export interface RegisterUserRequest {
     emailAddress:string;
     firstName:string;
     lastName:string;
+    mobileNumber:string;
+    userType:string;
 }
 export interface RegistrationUserResponse {
     username:string;

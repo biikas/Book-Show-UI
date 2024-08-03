@@ -5,6 +5,13 @@ export interface Response<T = void> {
     message: string;
 }
 
+export interface LoginAccessResponse<T = void> {
+    code: string;
+    success: boolean;
+    obj: T;
+    message: string;
+}
+
 export interface SearchResponse<T = void> {
     request: {
         object: T;
