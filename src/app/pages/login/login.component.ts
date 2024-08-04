@@ -54,6 +54,7 @@ export class LoginComponent {
         console.log('Login success');
         sessionStorage.setItem('AccessToken', response.obj.token);
         sessionStorage.setItem('username', response.obj.username);
+        sessionStorage.setItem('userType',response.obj.userType)
         this.router.navigate(['home'])
       },
       error: (errorResponse) => {},

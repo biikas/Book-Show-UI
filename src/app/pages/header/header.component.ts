@@ -13,6 +13,7 @@ export class HeaderComponent {
   constructor(private router: Router) {}
   isLoggedIn: boolean = true; // Replace with actual auth logic
   username!: string;
+  userType!:string;
 
   // Logic to determine if user is logged in
   checkAuth() {
@@ -24,6 +25,10 @@ export class HeaderComponent {
       const username = sessionStorage.getItem('username');
       if (username) {
         this.username = username;
+      }
+      const userType = sessionStorage.getItem('userType')
+      if(userType){
+        this.userType = userType;
       }
     } else {
       this.isLoggedIn = false;

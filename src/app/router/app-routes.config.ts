@@ -4,6 +4,7 @@ import { HomeCompnent } from '../pages/home/home.component';
 import { LayoutComponent } from '../pages/layout/layout.component';
 import { LoginComponent } from '../pages/login/login.component';
 import { RiderRegisterComponent } from '../pages/rider-register/rider-register.component';
+import { DriverRegisterComponent } from '../pages/driver-register/driver-register.component';
 
 export const AppRoutes: Routes = [
   {
@@ -17,4 +18,5 @@ export const AppRoutes: Routes = [
   },
   { path: 'login', component: LoginComponent },
   { path: 'rider-register', component: RiderRegisterComponent },
+  { path: 'driver-register', component: DriverRegisterComponent },
 ];

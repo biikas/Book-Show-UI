@@ -10,8 +10,13 @@
     <p>Explore our services and get in touch with us for more information.</p>
   </main>
 
-  <main class="body-section" *ngIf="loggedIn">
+  <main class="body-section" *ngIf="loggedIn && userType === 'RIDER'">
     <h1>Get Your First Ride {{username}}</h1>
+    <!-- <p>Explore our services and get in touch with us for more information.</p> -->
+  </main>
+
+  <main class="body-section" *ngIf="loggedIn && userType === 'DRIVER'">
+    <h1>Start Earning money {{username}}</h1>
     <!-- <p>Explore our services and get in touch with us for more information.</p> -->
   </main>
   

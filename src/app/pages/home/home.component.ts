@@ -12,17 +12,21 @@ export class HomeCompnent implements OnInit {
   loggedIn: boolean = false;
 
   username!: string;
+  userType!:string;
 
-  // Logic to determine if user is logged in
+
   checkAuth() {
     debugger;
-    // Example logic; replace with actual implementation
     const token = sessionStorage.getItem('AccessToken');
     if (token) {
       this.loggedIn = true;
       const username = sessionStorage.getItem('username');
       if (username) {
         this.username = username;
+      }
+      const userType = sessionStorage.getItem('userType');
+      if (userType) {
+        this.userType = userType;
       }
     } else {
       this.loggedIn = false;

@@ -13,6 +13,8 @@ export interface LoginResponse{
     firstName: string;
     lastName: string;
     token: string;
+    userType:string;
+    name:string;
 }
 
 @Injectable({
