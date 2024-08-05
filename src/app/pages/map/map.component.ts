@@ -11,8 +11,18 @@ import { RouterOutlet } from '@angular/router';
 })
 export class MapComponent {
   options: google.maps.MapOptions = {
-    mapId: 'a32963f6d3042cd8',
+    mapId: '7f88b912a72985ad',
     center: { lat: -31, lng: 147 },
     zoom: 4,
   };
+
+  map: google.maps.Map | undefined;
+
+  ngAfterViewInit(): void {
+    // Ensure the map object is created after the view has been initialized
+    this.map = new google.maps.Map(
+      document.getElementById('map') as HTMLElement,
+      this.options
+    );
+  }
 }
