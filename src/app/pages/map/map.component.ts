@@ -1,28 +1,34 @@
-import { Component } from '@angular/core';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
-  standalone: true,
-  imports: [RouterOutlet, GoogleMapsModule],
 })
-export class MapComponent {
-  options: google.maps.MapOptions = {
-    mapId: '7f88b912a72985ad',
-    center: { lat: -31, lng: 147 },
-    zoom: 4,
-  };
+export class HereMapComponent implements OnInit {
+  constructor() {}
 
-  map: google.maps.Map | undefined;
+  ngOnInit(): void {
+    this.loadMap();
+  }
 
-  ngAfterViewInit(): void {
-    // Ensure the map object is created after the view has been initialized
-    this.map = new google.maps.Map(
-      document.getElementById('map') as HTMLElement,
-      this.options
+  loadMap() {
+    const platform = new H.service.Platform({
+      apikey: 'HZkPx3GYmJhzX80dRW-mjRJB_VzfyZhSJmXyjseBXiA',
+    });
+
+    const defaultLayers = platform.createDefaultLayers();
+
+    const map = new H.Map(
+      document.getElementById('mapContainer') as HTMLElement,
+      defaultLayers.vector.normal.map,
+      {
+        zoom: 14,
+        center: { lat: 27.7172, lng: 85.324 },
+      }
     );
+
+    const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+    const ui = H.ui.UI.createDefault(map, defaultLayers);
   }
 }

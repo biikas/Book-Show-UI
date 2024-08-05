@@ -5,7 +5,7 @@ import { LayoutComponent } from '../pages/layout/layout.component';
 import { LoginComponent } from '../pages/login/login.component';
 import { RiderRegisterComponent } from '../pages/rider-register/rider-register.component';
 import { DriverRegisterComponent } from '../pages/driver-register/driver-register.component';
-import { MapComponent } from '../pages/map/map.component';
+import { HereMapComponent } from '../pages/map/map.component';
 
 export const AppRoutes: Routes = [
   {
@@ -20,5 +20,5 @@ export const AppRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'rider-register', component: RiderRegisterComponent },
   { path: 'driver-register', component: DriverRegisterComponent },
-  { path: 'map', component: MapComponent },
+  { path: 'map', component: HereMapComponent },
 ];
