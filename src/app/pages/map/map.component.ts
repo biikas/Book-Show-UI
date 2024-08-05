@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { RouterOutlet } from '@angular/router';
+import Map from 'ol/Map';
+import View from 'ol/View';
+import { OSM } from 'ol/source';
+import TileLayer from 'ol/layer/Tile';
 
 @Component({
   selector: 'map',
@@ -9,20 +13,24 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet, GoogleMapsModule],
 })
-export class MapComponent {
-  options: google.maps.MapOptions = {
-    mapId: '7f88b912a72985ad',
-    center: { lat: -31, lng: 147 },
-    zoom: 4,
-  };
+export class MapComponent implements OnInit {
+  public map!: Map
 
-  map: google.maps.Map | undefined;
 
-  ngAfterViewInit(): void {
-    // Ensure the map object is created after the view has been initialized
-    this.map = new google.maps.Map(
-      document.getElementById('map') as HTMLElement,
-      this.options
-    );
+
+  ngOnInit(): void {
+    this.map = new Map({
+      layers: [
+        new TileLayer({
+          source: new OSM(),
+        }),
+      ],
+      target: 'map',
+      view: new View({
+        center: [0, 0],
+        zoom: 2, maxZoom: 18,
+      }),
+    });
   }
+
 }
